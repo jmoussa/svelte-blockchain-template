@@ -1,5 +1,5 @@
 <script>
-	import Hello from './Hello.svelte';
+	import Hello from '$components/Hello.svelte';
 	async function connectWallet() {
 		if (window.ethereum) {
 			window.web3 = new Web3(ethereum);
@@ -16,7 +16,7 @@
 
 <main>
 	{#if window.ethereum}
-		<div>Browser wallet connected to metamask: {metamaskConnected}</div>
+		<div><h1>Browser wallet connected to metamask: {metamaskConnected}</h1></div>
 	{/if}
 	{#if window.ethereum && !metamaskConnected}
 		<button on:click={onClickConnectWallet}>Connect Wallet (web3)</button>

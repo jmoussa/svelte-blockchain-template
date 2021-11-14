@@ -24,7 +24,7 @@
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
-  contracts_build_directory: "./svelte/src/contracts", // JSON file that maps to the contract
+  contracts_build_directory: "./sveltekit/src/contracts", // JSON file that maps to the contract
   /**
    * Networks define how you connect to your ethereum client and let you set the
    * defaults web3 uses to send transactions. If you don't specify one truffle
